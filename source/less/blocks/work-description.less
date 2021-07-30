@@ -1,0 +1,26 @@
+.work-description {
+  .li-none;
+  display: flex;
+  flex-wrap: wrap;
+  @media @desktop{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 400px 400px;
+    justify-content:center;
+    margin-top: 255px;
+  }
+}
+.work-description__item {
+  margin: 0 auto;
+  @media @desktop{
+    margin: 0;
+  }
+  &+&{
+    margin-top: 20px;
+    @media @tablet{
+      margin-top: 0;
+    }
+    @media @desktop{
+    }
+  }
+}

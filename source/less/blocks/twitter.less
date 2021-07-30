@@ -1,0 +1,98 @@
+.twitter{
+  min-width: 320px;
+  max-height: 400px;
+  @media @tablet{
+    grid-area: twitter;
+    margin: 24px auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  @media @desktop{
+    margin: 58px 40px 0 224px;
+    min-width: 300px;
+    max-height: 400px;
+  }
+}
+.twitter__wrapper{
+  @media @tablet{
+    width: 320px;
+    position: relative;
+  }
+  @media @desktop{
+    width: 300px;
+  }
+}
+.twitter__header {
+  min-width: 320px;
+  max-width: 100%;
+  height: 60px;
+  display: flex;
+  @media @tablet{}
+  @media @desktop{
+    min-width: 300px;
+  }
+}
+.twitter__logo-shell {
+  background-color: @bgc-twitter1;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  @media @desktop{}
+}
+.twitter__circle {
+  .center;
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid @bgc-middle;
+  @media @desktop{}
+}
+.twitter__logo {
+  .center;
+  position: absolute;
+  width: 17px;
+  height: 14px;
+  @media @desktop{
+    .size(24px, 20px);
+  }
+}
+.twitter__nick-shell {
+  background-color: @bgc-twitter2;
+  height: auto;
+  width: 100%;
+  @media @desktop{
+    width: 260px;
+  }
+}
+.twitter__nick,
+.twitter__subtitle {
+  margin-top: 7px;
+  padding-left: 10px;
+  color: @text;
+  @media @desktop{
+    margin: 0px;
+    padding-left: 15px;
+  }
+}
+.twitter__nick {
+  @media @desktop{
+    margin-top: 6px;
+    .font__size(24px, 30px, 400);
+  }
+}
+.twitter__subtitle {
+  @media @desktop{
+    .font__size(14px, 14px, 400);
+    margin-top: 0px;
+  }
+
+}
+.twitter__shell-tape{
+  min-width: 260px;
+  max-height: 320px;
+  overflow: auto;
+  @media @desktop{
+    max-height: 235px;
+  }
+}

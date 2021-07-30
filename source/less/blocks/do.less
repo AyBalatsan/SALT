@@ -1,0 +1,36 @@
+.do {
+  padding-top: 12px;
+  background-color: @bgc-mobil;
+  @media @tablet{
+    background-color: @bgc-do;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  @media @desktop{
+    position: relative;
+    padding-bottom: 141px;
+  }
+}
+.do__shell{
+  position: relative;
+  margin: 0 auto;
+  width: 165px;
+  @media @tablet{
+   width: 320px;
+  }
+  @media @desktop{
+    width: 500px;
+    float: right;
+    margin: 142px 16.5% 0 0;
+  }
+}
+.do__title {
+  text-align: center;
+  margin: 0 0 12px 0;
+  @media @tablet{
+    font-size: 40px;
+  }
+  @media @desktop{
+    .font__size(60px, 18px, 700);
+  }
+}

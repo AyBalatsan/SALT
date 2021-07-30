@@ -1,0 +1,121 @@
+.transition {
+  position: absolute;
+  text-align: center;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @media @tablet{
+    bottom: 15px;
+  }
+  @media @desktop{}
+}
+.transition__title {
+  color: @text-footer-title;
+  z-index: 2;
+  @media @tablet{
+    color: @text;
+    margin-top: 0;
+    margin-bottom: 35px;
+  }
+  @media @desktop{
+    .font__size(14px, 16px, 700);
+    text-transform: uppercase;
+    margin-bottom: 80px;
+  }
+}
+.transition__button {
+  position: relative;
+  @media @tablet{
+    display: block;
+  }
+  @media @desktop{}
+}
+.transition__block1, .transition__block2, .transition__block3{
+  position: absolute;
+  content: '';
+  width: 17px;
+  height: 10px;
+  border: none;
+  border-left: 1px solid @button;
+  border-right: 1px solid @button;
+  background-color: transparent;
+  @media @tablet{
+    .center;
+    width: 34px;
+    height: 20px;
+    border-left: 2px solid @button;
+    border-right: 2px solid @button;
+  }
+  @media @desktop{
+    width: 60px;
+    height: 34px;
+    border-left: 3px solid @button;
+    border-right: 3px solid @button;
+    transform: translate(-50%, -110%);
+  }
+}
+.transition__block2{
+  transform: rotate(60deg);
+  @media @tablet{
+    top: -10px;
+    left: 45px;
+  }
+  @media @desktop{
+    top: -38px;
+    left: 26px;
+  }
+}
+.transition__block3{
+  transform: rotate(-60deg);
+  @media @tablet{
+    top: -10px;
+    left: 45px;
+  }
+  @media @desktop{
+    top: -38px;
+    left: 26px;
+  }
+}
+.transition__arrow{
+  display: block;
+  position: absolute;
+  width: 6px;
+  height: 1px;
+  background-color: @button;
+  @media @tablet{
+    width: 12px;
+    height: 3px;
+  }
+  @media @desktop{
+    width: 21px;
+    height: 5px;
+  }
+  &--left{
+    top: 3px;
+    left: 3px;
+    transform: rotate(90deg);
+    @media @tablet{
+      top: 6px;
+      left: 6px;
+    }
+    @media @desktop{
+      transform: rotate(100deg);
+      top: 9px;
+      left: 12px;
+    }
+  }
+  &--right{
+    top: 3px;
+    right: 3px;
+    transform: rotate(90deg);
+    @media @tablet{
+      top: 6px;
+      right: 6px;
+    }
+    @media @desktop{
+      top: 9px;
+      right: 12px;
+      transform: rotate(80deg);
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.card {
+  width: 240px;
+  @media @tablet{
+    display: grid;
+    grid-template-rows: 150px 40px minmax(100px, 250px);
+  }
+  @media @desktop{
+    display: block;
+    margin: 0;
+    width: 300px;
+  }
+}
+.card__img-shell{
+  @media @desktop{
+    height: 150px;
+    width: 210px;
+    margin: 0 auto;
+  }
+
+}
+.card__img {
+  display: block;
+  margin: 0 auto;
+  @media @desktop{
+    margin: 0;
+  }
+}
+.card__description {
+
+}
+.card__title {
+  margin-bottom: 0;
+  @media @tablet{
+    text-align: center;
+  }
+  @media @desktop{
+    .font__size (18px, 16px, 700);
+    text-align: start;
+    text-transform: uppercase;
+    margin-top: 30px;
+  }
+}
+.card__subtitle {
+  text-indent: 20px;
+  margin-top: 12px;
+  @media @desktop{
+    .font__size (15px, 22px, 400);
+    color: @text-subtitle;
+    text-indent: 0;
+    margin-top: 5px;
+    &--device{width: 277px;}
+    &--authentication{width: 292px;}
+    &--transaction{width: 300px;}
+    &--maze{width: 274px;}
+    &--hard{width: 300px;}
+    &--cloud{width: 277px;}
+  }
+}

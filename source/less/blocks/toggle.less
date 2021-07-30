@@ -1,0 +1,73 @@
+.toggle {
+  display: flex;
+  flex-direction:column;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  @media @tablet{
+    top: 60px;
+    right: 65px;
+  }
+  @media @desktop{}
+}
+.toggle__item {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  @media @desktop{}
+  &+&{
+    margin-top: 34px;
+    @media @desktop{}
+  }
+}
+.toggle__item:hover .toggle__block1,
+.toggle__item:hover .toggle__block2,
+.toggle__item:hover .toggle__block3 {
+  background-color: @text-active;
+}
+.toggle__item:active .toggle__block2,
+.toggle__item:active .toggle__block1,
+.toggle__item:active .toggle__block3 {
+  background-color: @text-active;
+  border-left: 3px solid @text-active;
+  border-right: 3px solid @text-active;
+}
+.toggle__item--active .toggle__block1,
+.toggle__item--active .toggle__block2,
+.toggle__item--active .toggle__block3 {
+  background-color: @text-active;
+  @media @desktop{
+    border-left: 3px solid @text-active;
+    border-right: 3px solid @text-active;
+  }
+}
+.toggle__block1, .toggle__block2, .toggle__block3{
+  position: absolute;
+  content: '';
+  width: 17px;
+  height: 10px;
+  border: none;
+  border-left: 1px solid @button;
+  border-right: 1px solid @button;
+  background-color: transparent;
+  @media @tablet{
+    width: 34px;
+    height: 20px;
+    border-left: 3px solid @button;
+    border-right: 3px solid @button;
+  }
+  @media @desktop{
+    width: 17px;
+    height: 10px;
+    border-left: 3px solid @button-toggle;
+    border-right: 3px solid @button-toggle;
+  }
+}
+.toggle__block2{
+  transform: rotate(60deg);
+  @media @desktop{}
+}
+.toggle__block3{
+  transform: rotate(-60deg);
+  @media @desktop{}
+}

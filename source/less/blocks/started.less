@@ -1,0 +1,39 @@
+.started{
+  background: linear-gradient(45deg, @bgc-ready1, @bgc-ready2);
+  min-height: 150px;
+  @media @tablet{
+    background: url('../img/bg.jpg') no-repeat;
+    background-size: 100vw;
+  }
+  @media @desktop{
+    min-height: 218px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+.started__title {
+  margin: 0;
+  color: @text;
+  text-align: center;
+  font-size: 24px;
+  padding-top: 32px;
+  @media @tablet{
+    font-size: 40px;
+  }
+  @media @desktop{
+    padding: 0;
+    margin-top: 88px;
+    margin-left: 221px;
+  }
+}
+.started__button {
+  margin: 12px 0 0 42px;
+  @media @tablet{
+    margin: 6px 0 0 6%;
+  }
+  @media @desktop{
+    margin-top: 92px;
+    margin-right: 223px;
+  }
+}

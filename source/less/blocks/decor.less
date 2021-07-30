@@ -1,0 +1,49 @@
+.decor {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: -5px;
+  right: 0;
+  @media @tablet{
+    top: -14px;
+    right: 32px;
+  }
+  @media @desktop{
+    top: -52px;
+    right: 67px;
+  }
+}
+.decor__top {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 4px;
+  background-color: @button;
+  @media @tablet{
+    width: 25px;
+    height: 6px;
+  }
+  @media @desktop{
+    width: 44px;
+    height: 12px;
+  }
+}
+.decor__right {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 12px;
+  background-color: @button;
+  position: absolute;
+  right: 2px;
+  @media @tablet{
+    width: 6px;
+    height: 18px;
+    right: -9px;
+  }
+  @media @desktop{
+    width: 11px;
+    height: 34px;
+    right: -28px;
+  }
+}

@@ -1,0 +1,20 @@
+.button{
+  width: 174px;
+  height: 54px;
+  background-color: @button;
+  color: @text;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  @media @desktop{
+    .font__size(14px, 45px, 700);
+  }
+  &:hover{
+    background-color: @button-hover;
+    @media @desktop{}
+  }
+  &:active{
+    background-color: @button-push;
+    @media @desktop{}
+  }
+}

@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+}
+
+*,*:before,*:after{
+  box-sizing: inherit;
+}
+body {
+  background-color: @bgc-mobil;
+  color: @text-style;
+  font-family: "ProximaNova", Arial, sans-serif;
+  font-weight: 400;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    'header'
+    'content'
+    'footer';
+    @media @tablet{
+      background-color: @bgc-middle;
+    }
+}
+.page-header{
+  grid-area: header;
+}
+.page-main{
+  grid-area: content;
+}
+.page-footer{
+  grid-area: footer;
+}

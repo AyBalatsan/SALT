@@ -1,0 +1,49 @@
+.reference {
+  .li-none;
+  @media @desktop{
+    width: 870px;
+    display: flex;
+    justify-content: start;
+    margin: 42px 0 0 66px;
+  }
+}
+.reference__item {
+  @media @tablet{
+    &--navigation{
+      grid-area: navigation;
+    }
+    &--linls{
+      grid-area: links;
+    }
+    &--callback{
+      grid-area: contacts;
+    }
+  }
+  &+&{
+    @media @desktop{
+      margin-left: 140px;
+    }
+  }
+}
+.reference__title {
+  text-align: center;
+  color: @text-footer-title;
+  @media @tablet{
+    font-size: 24px;
+    margin: 12px 0 0 0;
+  }
+  @media @desktop{
+    .font__size(14px, auto, 700);
+    text-transform: uppercase;
+    text-align: start;
+    margin-bottom: 12px;
+  }
+}
+.reference__img{
+  display: none;
+  @media @desktop{
+    display: inline-block;
+    .size(10px, 10px);
+    margin-right: 5px;
+  }
+}
