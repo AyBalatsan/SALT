@@ -8,6 +8,7 @@
 }
 .slider__list {
   .li-none;
+  position: relative;
   @media @desktop{
     width: 1152px;
     margin: 0 auto;
@@ -15,12 +16,20 @@
   }
 }
 .slider__item {
+  position: absolute;
+  top: 0;
+  left: 77px;
   display: flex;
   flex-wrap: wrap;
   justify-content:space-between;
-  opacity: 1;
   transition: all 1.5s ease-in-out;
-  @media @desktop{}
+  opacity: 0;
+  visibility: hidden;
+}
+.slider__list .slider__item--current {
+  visibility: visible;
+  transition: all 1.5s ease-in-out;
+  opacity: 1;
 }
 .slider__part {
   position: relative;
@@ -83,7 +92,7 @@
     height: 132px;
   }
   @media @desktop{
-    margin: 56px 149px 0 0;
+    margin: 56px 0 0 202px;
     height: 121px;
     width: 148px;
   }
