@@ -83,15 +83,10 @@
   }
 }
 .slider__img {
-  margin: 0 25px 0 10px;
-  transform: scale(-1, 1);
-  @media @tablet{
-    transform: scale(1, 1);
-    margin: 16px 20% 0 0;
-    width: 153px;
-    height: 132px;
-  }
+  display: none;
+  @media @tablet{}
   @media @desktop{
+    display: block;
     margin: 56px 0 0 202px;
     height: 121px;
     width: 148px;
